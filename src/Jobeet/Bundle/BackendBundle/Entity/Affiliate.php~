@@ -158,44 +158,4 @@ class Affiliate
     {
         return $this->createdAt;
     }
-    /**
-     * Constructor
-     */
-    public function __construct()
-    {
-        $this->cateogry_affiliates = new \Doctrine\Common\Collections\ArrayCollection();
-    }
-
-    /**
-     * Add cateogry_affiliates
-     *
-     * @param \Jobeet\Bundle\BackendBundle\Entity\CategoryAffiliate $cateogryAffiliates
-     * @return Affiliate
-     */
-    public function addCateogryAffiliate(\Jobeet\Bundle\BackendBundle\Entity\CategoryAffiliate $cateogryAffiliates)
-    {
-        $this->cateogry_affiliates[] = $cateogryAffiliates;
-
-        return $this;
-    }
-
-    /**
-     * Remove cateogry_affiliates
-     *
-     * @param \Jobeet\Bundle\BackendBundle\Entity\CategoryAffiliate $cateogryAffiliates
-     */
-    public function removeCateogryAffiliate(\Jobeet\Bundle\BackendBundle\Entity\CategoryAffiliate $cateogryAffiliates)
-    {
-        $this->cateogry_affiliates->removeElement($cateogryAffiliates);
-    }
-
-    /**
-     * Get cateogry_affiliates
-     *
-     * @return \Doctrine\Common\Collections\Collection 
-     */
-    public function getCateogryAffiliates()
-    {
-        return $this->cateogry_affiliates;
-    }
 }
