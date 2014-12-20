@@ -56,7 +56,11 @@ class Affiliate
      */
     protected $cateogry_affiliates;
 
-
+    public function __construct()
+    {
+        $this->createdAt = new \DateTime('now');
+    }
+    
     /**
      * Get id
      *

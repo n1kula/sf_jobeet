@@ -5,7 +5,7 @@ namespace Jobeet\BackendBundle\DataFixtures\ORM;
 use Doctrine\Common\Persistence\ObjectManager;
 use Doctrine\Common\DataFixtures\AbstractFixture;
 use Doctrine\Common\DataFixtures\OrderedFixtureInterface;
-use Jobeet\Bundle\BackendBundle\Entity\Category;
+use Jobeet\BackendBundle\Entity\Category;
  
 class LoadCategoryData extends AbstractFixture implements OrderedFixtureInterface
 {

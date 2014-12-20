@@ -5,7 +5,7 @@ namespace Jobeet\BackendBundle\DataFixtures\ORM;
 use Doctrine\Common\Persistence\ObjectManager;
 use Doctrine\Common\DataFixtures\AbstractFixture;
 use Doctrine\Common\DataFixtures\OrderedFixtureInterface;
-use Jobeet\Bundle\BackendBundle\Entity\Job;
+use Jobeet\BackendBundle\Entity\Job;
  
 class LoadJobData extends AbstractFixture implements OrderedFixtureInterface
 {
