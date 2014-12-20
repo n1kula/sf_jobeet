@@ -1,0 +1,26 @@
+{% extends 'JobeetFrontendBundle::layout.html.twig' %}
+{% block stylesheets %}
+  {{ parent() }}
+  {% stylesheets
+                  '@JobeetFrontendBundle/Resources/public/css/jobs.css'
+            %}
+            <link href="{{ asset_url }}" type="text/css" rel="stylesheet">
+            {% endstylesheets %}
+{% endblock %}
+{% block content %}
+    <div id="jobs">
+      <table class="jobs">
+        {% for entity in entities %}
+          <tr class="{{ cycle(['even', 'odd'], loop.index) }}">
+            <td class="location">{{ entity.location }}</td>
+            <td class="position">
+              <a href="{{ path('job_show', { 'id': entity.id }) }}">
+                {{ entity.position }}
+              </a>
+            </td>
+            <td class="company">{{ entity.company }}</td>
+          </tr>
+        {% endfor %}
+      </table>
+    </div>
+{% endblock %}
