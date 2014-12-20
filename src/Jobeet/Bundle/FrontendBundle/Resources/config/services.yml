@@ -1,0 +1,4 @@
+services:
+#    jobeet_frontend.example:
+#        class: Jobeet\Bundle\FrontendBundle\Example
+#        arguments: [@service_id, "plain_value", %parameter%]
