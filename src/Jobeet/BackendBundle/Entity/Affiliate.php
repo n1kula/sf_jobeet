@@ -56,11 +56,7 @@ class Affiliate
      */
     protected $cateogry_affiliates;
 
-    public function __construct()
-    {
-        $this->createdAt = new \DateTime('now');
-    }
-    
+   
     /**
      * Get id
      *
@@ -166,6 +162,7 @@ class Affiliate
     public function __construct()
     {
         $this->cateogry_affiliates = new \Doctrine\Common\Collections\ArrayCollection();
+        $this->createdAt = new \DateTime('now');
     }
 
     /**

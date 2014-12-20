@@ -1,6 +1,14 @@
 {% extends 'JobeetFrontendBundle::layout.html.twig' %}
-
-{% block body -%}
+{% block stylesheets %}
+  {{ parent() }}
+  {% stylesheets
+                  '@JobeetFrontendBundle/Resources/public/css/job.css'
+            %}
+            <link href="{{ asset_url }}" type="text/css" rel="stylesheet">
+            {% endstylesheets %}
+{% endblock %}
+ 
+{% block content %}
     <h1>Job creation</h1>
 
     {{ form(form) }}
