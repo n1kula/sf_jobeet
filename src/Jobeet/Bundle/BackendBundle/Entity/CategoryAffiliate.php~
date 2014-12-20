@@ -46,4 +46,50 @@ class CategoryAffiliate
     {
         return $this->id;
     }
+
+    /**
+     * Set category_id
+     *
+     * @param \Jobeet\Bundle\BackendBundle\Entity\Category $categoryId
+     * @return CategoryAffiliate
+     */
+    public function setCategoryId(\Jobeet\Bundle\BackendBundle\Entity\Category $categoryId = null)
+    {
+        $this->category_id = $categoryId;
+
+        return $this;
+    }
+
+    /**
+     * Get category_id
+     *
+     * @return \Jobeet\Bundle\BackendBundle\Entity\Category 
+     */
+    public function getCategoryId()
+    {
+        return $this->category_id;
+    }
+
+    /**
+     * Set affiliate_id
+     *
+     * @param \Jobeet\Bundle\BackendBundle\Entity\Affiliate $affiliateId
+     * @return CategoryAffiliate
+     */
+    public function setAffiliateId(\Jobeet\Bundle\BackendBundle\Entity\Affiliate $affiliateId = null)
+    {
+        $this->affiliate_id = $affiliateId;
+
+        return $this;
+    }
+
+    /**
+     * Get affiliate_id
+     *
+     * @return \Jobeet\Bundle\BackendBundle\Entity\Affiliate 
+     */
+    public function getAffiliateId()
+    {
+        return $this->affiliate_id;
+    }
 }

@@ -144,9 +144,7 @@ class Affiliate
      */
     public function setCreatedAt($createdAt)
     {
-        $this->createdAt = $createdAt;
-
-        return $this;
+        $this->created_at = new \DateTime();
     }
 
     /**

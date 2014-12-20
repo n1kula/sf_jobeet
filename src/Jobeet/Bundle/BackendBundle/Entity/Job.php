@@ -475,9 +475,11 @@ class Job
      */
     public function setCreatedAt($createdAt)
     {
-        $this->createdAt = $createdAt;
-
-        return $this;
+      if(!$this->getCreatedAt())
+         {
+             $this->created_at = new \DateTime();
+         }
+      return $this;
     }
 
     /**
@@ -496,11 +498,9 @@ class Job
      * @param \DateTime $updatedAt
      * @return Job
      */
-    public function setUpdatedAt($updatedAt)
+    public function setUpdatedAt()
     {
-        $this->updatedAt = $updatedAt;
-
-        return $this;
+        $this->updated_at = new \DateTime();
     }
 
     /**
